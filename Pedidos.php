@@ -48,24 +48,22 @@ $result = $conn -> query($sql);
 
     <h1 id="tituloPedido"> Pedidos: </h1>
         <div class="inputPedido">
-        <h4 onmouseover="alterarcor(this)" onmouseout="alterarcor(this)"> 
-        
-        Nome:</h4>
+        <h4>Nome:</h4>
         <input type="text" name= "CLIENTE" placeholder="digite seu nome"  class="nome" > <br>
         
-        <h4 onmouseover="alterarcor(this)" onmouseout="alterarcor(this)"> Telefone:</h4>
+        <h4> Telefone:</h4>
         <input type="number" name= "TELEFONE" placeholder="Digite seu telefone" class="nome" > <br>
         
-        <h4 onmouseover="alterarcor(this)" onmouseout="alterarcor(this)"> Produto:</h4>
+        <h4> Produto:</h4>
         <input type="text" name= "PRODUTO" placeholder="descrição do  produto"  class="nome" > <br>
         
-        <h4 onmouseover="alterarcor(this)" onmouseout="alterarcor(this)"> ValorUnitário</h4>
-        <input type="number" name= " VALOR_UNITARIO" placeholder="valor..." class="nome" > <br>
-       
-        <h4 onmouseover="alterarcor(this)" onmouseout="alterarcor(this)">Quantidade:</h4>
+        <h4> ValorUnitário</h4>
+        <input type="number" name= " VALOR_UNITARIO" placeholder="valor..." class="nome" > 
+        
+        <h4>Quantidade:</h4>
         <input type="number" name="QUANTIDADE" placeholder="quantidade" class="nome"  > <br>
        
-        <h4 onmouseover="alterarcor(this)" onmouseout="alterar]]cor(this)">R$ Total:</h4>
+        <h4>R$ Total:</h4>
         <input type="number" name="VALOR_TOTAL" number="numero" placeholder="digite valor total" class="nome"  > <br><br>
        
         <input type="submit" name="submit" value="ENVIAR!" >
@@ -75,14 +73,7 @@ $result = $conn -> query($sql);
 
   </main> 
 
-        <!--Fim do formulário-->
-
-
-
         <br><br><br><br><br>
-
-
-
 
         <footer>
         <div>
