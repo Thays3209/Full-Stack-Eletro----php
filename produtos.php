@@ -39,7 +39,7 @@ if(!$conn){
     <h2 class="h2">Produtos:</h2>
     <hr>
 
-    <aside>
+    <section>
         <h3 class="categoria"> Categorias: </h3>
         <ul class="categoria">
             <li onclick="exibir_todos()">Todos(12)</li>
@@ -50,11 +50,13 @@ if(!$conn){
             <li onclick="exibir_categoria('lavaLouca')">Lava-louças (2)</li> <br><br>
             <li> <a href=Pedidos.php> Fazer pedido!! </a></li>
         </ul>
-    </aside>
-
-    <section id="prod">
         
-            <div class="conteiner">
+        
+    </section>
+
+    <aside id="prod">
+        
+        
             
         <?php
         $sql = "select * from produtos";
@@ -66,14 +68,14 @@ if(!$conn){
         
             
         ?>  
-            <div>
-            <div class="produtos" id="<?php echo $row["categoria"]?>" style="display:block;">
+            
+             <div class="produtos" id="<?php echo $row["categoria"]?>" style="display:block;">
                     <img src="<?php echo $row["imagem"]?>" alt="Fogão Consul Ínox" width="170px" height="240px" onclick="destaque(this)">
                     <h4><?php echo $row["descrição"]?></h4>
                     <hr>
                     <p class="valorAntes"><?php echo $row["precoAntes"]?></p>
                     <p class="valorDesc"><?php echo $row["precoDepois"]?></p>
-                </div>   
+            </div>   
         <?php  
             
         }
@@ -84,9 +86,7 @@ if(!$conn){
         ?>
             
           
-        </div>
-        </div>
-    </section>
+    </aside>
 
     <!--Fim do corpo do texto-->
 
