@@ -88,7 +88,7 @@ nav#menu a:hover {
 
 /* PRODUTOS */
 
-aside li:hover {
+sectionli:hover {
     color: #000000;
     text-decoration:underline;
     font-weight: bolder;
@@ -101,23 +101,32 @@ aside li:hover {
 }
 
 
-aside{
+section{
     display: inline-block;
     vertical-align: top;
     width: 15%;
+    float: left;
 }
 
-section#prod {
-    margin-left:50px;
-    width:75%;
-    display:inline-block;
+aside#prod {
+    
+    float: rigth;
+    width: 70%;
+    margin-top: 7vh;
+    padding-left: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
 }
 
 hr {
     margin-bottom:20px;
 }
 
- aside ul{
+ section ul{
     list-style:none;
 }
 
@@ -127,30 +136,24 @@ hr {
     padding:1cm ;
 }
 
-.conteiner{
+.produtos{
+    
     display:inline-block;
     position:relative;
     width: 25%;
     padding: 10px;
-   
-
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding:5px;
+    border-radius:5px; 
 }
 
 h4 li {
     font-size: 18px;
 }
 
-.conteiner .produtos {
-    position:relative;
-    font-family: Arial, Helvetica, sans-serif;
-    display:inline-block;
-    text-align: center;
-    width: 100%;
-    padding:5px;
-    border-radius:5px;
-   
 
-}
 
 .conteiner.produtos img {
     position:relative; 
@@ -282,6 +285,13 @@ textarea {
         font-weight: bolder;
     }
     
+
+
+
+
+
+
+
 
 
 
