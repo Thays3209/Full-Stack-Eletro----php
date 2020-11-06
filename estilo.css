@@ -88,7 +88,7 @@ nav#menu a:hover {
 
 /* PRODUTOS */
 
-sectionli:hover {
+section li:hover {
     color: #000000;
     text-decoration:underline;
     font-weight: bolder;
